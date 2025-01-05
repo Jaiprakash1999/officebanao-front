@@ -5,6 +5,7 @@ import { RxCross2 } from "react-icons/rx";
 import { Cropper } from "react-cropper";
 import { MdOutlineEdit } from "react-icons/md";
 import EditableActions from "./EditableActions";
+import { toast } from "react-toastify";
 
 const PerformActionsOnImage = ({
   setIsDrawerOpen = () => {},
@@ -47,6 +48,7 @@ const PerformActionsOnImage = ({
     setSelectedImage(null);
     setIsDrawerOpen(false);
     setIsEditable(false);
+    toast.success("asset added");
   };
 
   return (

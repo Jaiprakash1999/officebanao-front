@@ -6,6 +6,7 @@ import HandleFileUpload from "./HandleFileUpload";
 import { IoSearchSharp } from "react-icons/io5";
 import { LuArrowDownUp } from "react-icons/lu";
 import PerformActionsOnImage from "./PerformActionsOnImage";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [assetsList, setAssetsList] = useState([]);
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <div className="text-sm ">
+      <ToastContainer />
       <div className="flex w-full fixed z-50 bg-white p-3 border-b justify-between">
         <div className="flex w-full">
           <div className="relative w-1/2 me-4">
